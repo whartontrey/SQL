@@ -1,0 +1,30 @@
+-- Create a ClothingStore table
+
+
+CREATE TABLE ClothingStore (id INTEGER PRIMARY KEY, item TEXT, color TEXT, price INTEGER, inventory INTEGER);  
+
+INSERT INTO ClothingStore VALUES (1, "shirt", "black", 5.99, 25);
+INSERT INTO ClothingStore VALUES (2, "shirt", "white", 5.99, 25); 
+INSERT INTO ClothingStore VALUES (3, "shirt", "blue", 4.99, 15); 
+INSERT INTO ClothingStore VALUES (4, "shirt", "red", 4.99, 15); 
+INSERT INTO ClothingStore VALUES (5, "shirt", "purple", 4.99, 10);
+INSERT INTO ClothingStore VALUES (6, "shirt", "grey", 5.99, 16);
+INSERT INTO ClothingStore VALUES (7, "hat", "black", 2.99, 10); 
+INSERT INTO ClothingStore VALUES (8, "hat", "white", 2.99, 10); 
+INSERT INTO ClothingStore VALUES (9, "hat", "red", 2.99, 5);
+INSERT INTO ClothingStore VALUES (10, "hat", "blue", 2.99, 12);
+INSERT INTO ClothingStore VALUES (11, "pants", "black", 10.99, 10); 
+INSERT INTO ClothingStore VALUES (12, "pants", "blue", 10.99, 10);
+INSERT INTO ClothingStore VALUES (13, "pants", "tan", 10.99, 10);
+INSERT INTO ClothingStore VALUES (14, "pants", "white", 10.99, 10);
+INSERT INTO ClothingStore VALUES (15, "pants", "grey", 10.99, 10);
+
+SELECT * FROM ClothingStore;
+
+-- display table ordered by price 
+SELECT * FROM ClothingStore 
+ORDER BY price asc;
+
+-- display table ordered by inventory
+SELECT * FROM ClothingStore 
+ORDER BY inventory asc; 
